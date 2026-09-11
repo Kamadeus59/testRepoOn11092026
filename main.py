@@ -13,8 +13,6 @@ def Update(coo):
     coo[0] += 1
     coo[0] = min(max(0, coo[0]),300)
 
-def isOkay():
-    pass
 
 running = True
 while running:
