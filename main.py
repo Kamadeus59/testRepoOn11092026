@@ -3,8 +3,15 @@ pg.init()
 
 screen = pg.display.set_mode((500,500))
 
+x = 100
+y = 100
+
 def Render(screen):
-    pg.draw.rect(screen, (255,255,255), (100,100,100,100))
+    pg.draw.rect(screen, (255,255,255), (x,y,100,100))
+
+def Update(coo):
+    coo[0] += 1
+    coo[0] = min(max(0, coo[0]),300)
 
 def isOkay():
     pass
@@ -15,6 +22,7 @@ while running:
         if event.type == pg.QUIT:
             running = False
     screen.fill((0,0,0))
+    Update([x])
     Render(screen)
     
     pg.display.flip()
