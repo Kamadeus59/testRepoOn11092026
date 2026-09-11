@@ -6,6 +6,8 @@ screen = pg.display.set_mode((500,500))
 def Render(screen):
     pg.draw.rect(screen, (255,255,255), (100,100,100,100))
 
+def isOkay():
+    pass
 
 running = True
 while running:
