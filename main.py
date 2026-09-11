@@ -8,5 +8,6 @@ while running:
     for event in pg.event.get():
         if event.type == pg.QUIT:
             running = False
+    screen.fill((0,0,0))
 
 pg.quit()
