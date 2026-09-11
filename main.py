@@ -13,9 +13,9 @@ def Update(events):
     global x,y
     keys = pg.key.get_pressed()
     if keys[pg.K_d]:
-        x += 1
-    if keys[pg.K_q]:
         x -= 1
+    if keys[pg.K_q]:
+        x += 1
     x = x%400
     if keys[pg.K_z]:
         y -= 1
